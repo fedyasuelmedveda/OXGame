@@ -93,9 +93,10 @@
             }
             public void PrintField()
             {
+                Console.Clear();
                 Console.WriteLine("X starts.");
                 Console.WriteLine("Press Space to make a turn.");
-                Console.Clear();
+                
                 for(int i = 0; i < 3; i++)
                 {
                     for(int j= 0; j < 3; j++)
