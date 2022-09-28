@@ -101,11 +101,16 @@
                 {
                     for(int j= 0; j < 3; j++)
                     {
-                        Console.Write(field[i,j]);
+
                         if (i == cursorY && j == cursorX)
-                            Console.Write('@');
+                        {
+                            Console.ForegroundColor = ConsoleColor.Blue;
+                            Console.Write(field[i, j]);
+                            Console.ForegroundColor = ConsoleColor.White;
+                        }
                         else
-                            Console.Write(' ');
+                            Console.Write(field[i, j]);
+                        Console.Write(' ');
                     }
                     Console.WriteLine();
                 }
